@@ -8,7 +8,8 @@
 
     }
     &__menu{ //mobile menu
-        > span // meaning direct child, to be precised
+        > span {             // meaning direct child, to be precised
 
+            display: block;
     }
 }

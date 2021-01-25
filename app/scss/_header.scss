@@ -22,6 +22,10 @@
             &:not(:last-child){
                 margin-bottom: 3px;
             }
+        }
     }
-}
+
+    &__links{
+        font-size: 0.875rem;
+    }
 }

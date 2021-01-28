@@ -28,4 +28,24 @@
     &__links{
         font-size: $font-sm;
     }
+
+
+button, .buouton2merde {
+    padding: 1rem 1.875rem;
+    background:  linear-gradient(to right, $limeGreen, $brightCyan);
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    color: $white;
+}
+}
+
+
+button, .buouton2merde {
+    padding: 1rem 1.875rem;
+    background:  linear-gradient(to right, $limeGreen, $brightCyan);
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    color: $white;
 }

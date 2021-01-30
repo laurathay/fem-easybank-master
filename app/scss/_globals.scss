@@ -39,7 +39,12 @@ a, a:visited, a:hover{
     }
 }
 
+button{
+    padding: 1rem 1.876rem;
+}
+
 button, .bouton2merde {
+
     padding: 1rem 1.875rem;
     background:  linear-gradient(to right, $limeGreen, $brightCyan);
     border-radius: 50px;

@@ -26,12 +26,21 @@
     }
 
     &__links{
-        font-size: $font-sm;
+
+        a{
+            font-size: $font-sm;
+            color: $grayishBlue;
+        }
+
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
     }
 
     &__cta{
         font-size: $font-sm;
-        color: $grayishBlue;
+        color: $white;
         
 
     }

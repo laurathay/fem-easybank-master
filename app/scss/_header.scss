@@ -4,13 +4,15 @@
         padding: 24px;
     }
 
-    // &__logo{
+    &__logo{
 
-        // img{
+         img{
+             width: 8.8125rem;
+             height: 1.375rem;
 
-        // }
+         }
 
-    // }
+     }
     &__menu{ //mobile menu
         > span {             // meaning direct child, to be precised
 
@@ -30,10 +32,15 @@
         a{
             font-size: $font-sm;
             color: $grayishBlue;
+            transition: color 200ms ease-in-out;
         }
 
             &:not(:last-child){
                 margin-right: 32px;
+            }
+
+            &:hover{
+                color: $darkBlue;
             }
 
     }

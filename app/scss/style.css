@@ -57,7 +57,7 @@ button, .bouton2merde {
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.0625rem;
 }
 .header__logo img {
   width: 8.8125rem;
@@ -73,12 +73,23 @@ button, .bouton2merde {
   margin-bottom: 3px;
 }
 .header__links a {
+  position: relative;
   font-size: 0.875rem;
   color: #9698a6;
   transition: color 200ms ease-in-out;
 }
 .header__links a:not(:last-child) {
   margin-right: 32px;
+}
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: lime;
+  left: 0;
+  right: 0;
+  bottom: -30px;
 }
 .header__links a:hover {
   color: #2d314d;

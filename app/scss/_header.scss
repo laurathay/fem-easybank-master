@@ -33,7 +33,7 @@
             font-size: $font-sm;
             color: $grayishBlue;
             transition: color 200ms ease-in-out;
-        }
+        
 
             &:not(:last-child){
                 margin-right: 32px;
@@ -43,15 +43,14 @@
                 color: $darkBlue;
             }
 
-    }
+        }
 
     &__cta{
         font-size: $font-sm;
         color: $white;
         
 
+        }
+
     }
-
 }
-
-

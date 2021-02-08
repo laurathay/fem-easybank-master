@@ -77,13 +77,13 @@ button, .bouton2merde {
   color: #9698a6;
   transition: color 200ms ease-in-out;
 }
-.header__links:not(:last-child) {
+.header__links a:not(:last-child) {
   margin-right: 32px;
 }
-.header__links:hover {
+.header__links a:hover {
   color: #2d314d;
 }
-.header__cta {
+.header__links__cta {
   font-size: 0.875rem;
   color: white;
 }

@@ -46,7 +46,7 @@
                 display: block;
                 position: absolute;
                 height: 5px;
-                background: lime;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
                 left: 0;
                 right: 0;
                 bottom: -30px;
@@ -54,6 +54,10 @@
 
             &:hover{
                 color: $darkBlue;
+
+                &::before{
+                    background: linear-gradient(to right, $limeGreen, $brightCyan);
+                }
             }
 
         }

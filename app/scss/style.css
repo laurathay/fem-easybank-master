@@ -86,13 +86,15 @@ button, .bouton2merde {
   display: block;
   position: absolute;
   height: 5px;
-  background: lime;
   left: 0;
   right: 0;
   bottom: -30px;
 }
 .header__links a:hover {
   color: #2d314d;
+}
+.header__links a:hover::before {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
 }
 .header__links__cta {
   font-size: 0.875rem;

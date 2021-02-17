@@ -1,3 +1,5 @@
+//pour que le burger devienne une croix 
+
 const btnHamburger = document.querySelector('#btnHamburger');
 
 btnHamburger.addEventListener('click', function(){

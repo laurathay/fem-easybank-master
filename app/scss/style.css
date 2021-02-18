@@ -119,5 +119,14 @@ button, .bouton2merde {
 .header__links__cta:hover {
   opacity: 0.75;
 }
+.header__links .overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #2d314d;
+  background-image: linear-gradient(#2d314d, transparent);
+}
 
 /*# sourceMappingURL=style.css.map */

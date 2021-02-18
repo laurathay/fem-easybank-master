@@ -84,15 +84,26 @@
 
         }
 
-    &__cta{
+    &__cta  {
         font-size: $font-sm;
         color: $white;
         transition: opacity 300ms ease-in-out;
 
-        &:hover{
+        &:hover  {
             opacity: 0.75;
         }
-        }
+     }
+    .overlay  {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: $darkBlue;
+        background-image: linear-gradient($darkBlue, transparent);
+    }
+
+
 
     }
 }

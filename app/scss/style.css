@@ -119,7 +119,7 @@ button, .bouton2merde {
 .header__links__cta:hover {
   opacity: 0.75;
 }
-.header__links .overlay {
+.header .overlay {
   position: fixed;
   top: 0px;
   right: 0px;

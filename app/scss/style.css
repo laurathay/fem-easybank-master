@@ -56,6 +56,23 @@ button, .bouton2merde {
   }
 }
 
+.header.open .header__menu > span:first-child {
+  transform: rotate(45deg);
+}
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__menu > span:last-child {
+  transform: rotate(-45deg);
+}
+.header .overlay {
+  position: fixed;
+  top: 3.75rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(#2d314d, transparent);
+}
 .header nav {
   padding: 1.0625rem;
 }
@@ -121,11 +138,10 @@ button, .bouton2merde {
 }
 .header .overlay {
   position: fixed;
-  top: 0px;
+  top: 3.75rem;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #2d314d;
   background-image: linear-gradient(#2d314d, transparent);
 }
 

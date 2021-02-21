@@ -1,4 +1,32 @@
 .header{
+    &.open{
+
+        .header__menu {
+            > span:first-child{
+                transform: rotate(45deg);
+            }
+    
+            > span:nth-child(2){
+                opacity: 0;
+                
+            }
+    
+            > span:last-child{
+                transform: rotate(-45deg);
+            }  
+        }
+
+    }
+
+
+    .overlay  {
+        position: fixed;
+        top: 3.75rem; //60px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($darkBlue, transparent);
+    }
 
     nav{
        // padding: 17px donc 17/16 = 1.0625rem;
@@ -97,11 +125,10 @@
     }
     .overlay  {
         position: fixed;
-        top: 0px;
+        top: 3.75rem; //60px;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-color: $darkBlue;
         background-image: linear-gradient($darkBlue, transparent);
     }
 }

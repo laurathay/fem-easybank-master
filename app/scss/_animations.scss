@@ -1,18 +1,37 @@
 @keyframes fade-in {
 
-    from{
-        display: none;
+    from{ //display doesnt work in animation
         opacity: 0;
 
     }
     1% {
-        display: block;
         opacity: 0;
     }
     to {
-        display: block;
         opacity: 1;
 
     }
 
+}
+
+.fade-in {
+    animation: fade-in 300ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+}
+
+@keyframes fade-out {
+
+    from{ //display doesnt work in animation
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+
+    }
+
+}
+
+.fade-out {
+    animation: fade-out 300ms ease-in-out forwards; //forwards will keep the style after the animation is finished
 }

@@ -2,6 +2,10 @@
 
     // hamburger open styles 
     &.open{
+        // need the display block for once you open 
+        .overlay{
+            display: block;
+        }
 
         .header__menu {
 

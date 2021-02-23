@@ -1,7 +1,7 @@
 
 const btnHamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector('.header');
-const overlay = documement.querySelector('.overlay');
+const overlay = document.querySelector('.overlay');
 
 //pour que le burger devienne une croix 
 

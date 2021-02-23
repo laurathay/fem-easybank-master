@@ -1,8 +1,10 @@
 @keyframes fade-in {
   from {
+    visibility: hidden;
     opacity: 0;
   }
   1% {
+    visibility: visible;
     opacity: 0;
   }
   to {
@@ -15,9 +17,15 @@
 
 @keyframes fade-out {
   from {
+    visibility: visible;
     opacity: 1;
   }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
   to {
+    visibility: hidden;
     opacity: 0;
   }
 }
@@ -83,9 +91,6 @@ button, .bouton2merde {
   }
 }
 
-.header.open .overlay {
-  display: block;
-}
 .header.open .header__menu > span:first-child {
   transform: rotate(45deg);
 }
@@ -96,7 +101,6 @@ button, .bouton2merde {
   transform: rotate(-45deg);
 }
 .header .overlay {
-  display: none;
   position: fixed;
   top: 3.75rem;
   right: 0px;

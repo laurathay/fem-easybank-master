@@ -1,10 +1,12 @@
 @keyframes fade-in {
 
-    from{ //display doesnt work in animation
+    from{ //display doesnt work in animation so use visibility
+        visibility: hidden;
         opacity: 0;
 
     }
     1% {
+        visibility: visible;
         opacity: 0;
     }
     to {
@@ -21,11 +23,17 @@
 @keyframes fade-out {
 
     from{ //display doesnt work in animation
+        visibility: visible;
         opacity: 1;
 
     }
+    99%{
+        visibility: visible;
+        opacity: 0;
+    }
 
     to {
+        visibility: hidden;
         opacity: 0;
 
     }

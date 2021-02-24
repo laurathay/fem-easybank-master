@@ -56,6 +56,11 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -91,13 +96,13 @@ button, .bouton2merde {
   }
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   transform: rotate(-45deg);
 }
 .header .overlay {
@@ -109,13 +114,14 @@ button, .bouton2merde {
   background-image: linear-gradient(#2d314d, transparent);
 }
 .header nav {
-  padding: 1.0625rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
 }
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -123,17 +129,29 @@ button, .bouton2merde {
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
-.header__menu.open > span:first-child {
+.header__toggle.open > span:first-child {
   transform: rotate(45deg);
 }
-.header__menu.open > span:nth-child(2) {
+.header__toggle.open > span:nth-child(2) {
   opacity: 0;
 }
-.header__menu.open > span:last-child {
+.header__toggle.open > span:last-child {
   transform: rotate(-45deg);
+}
+.header__menu {
+  background: white;
+  margin: 0 1.5rem;
+  padding: 1.25rem;
+  border-radius: 3px;
+}
+.header__menu a {
+  display: block;
+  padding: 0.625rem;
+  color: #2d314d;
+  text-align: center;
 }
 .header__links a {
   position: relative;

@@ -3,7 +3,7 @@
     // hamburger open styles 
     &.open{
       
-        .header__menu {
+        .header__toggle {
 
             > span:first-child{
                 transform: rotate(45deg);
@@ -34,10 +34,11 @@
         }
     }
 
-    nav{
+     nav{    
        // padding: 17px donc 17/16 = 1.0625rem;
-       padding: 1.0625rem;
-    }
+        padding-top: 1.0625rem; 
+        padding-bottom: 1.0625rem;
+     }
 
     &__logo{
 
@@ -48,7 +49,7 @@
          }
 
      }
-    &__menu{ //mobile menu
+    &__toggle{ //mobile menu toggle
         > span {             // meaning direct child, to be precised
 
             display: block;
@@ -79,6 +80,22 @@
             }
 
         }
+    }
+
+    &__menu {
+        background: $white;
+        margin: 0 1.5rem;
+        padding : 1.25rem;
+        border-radius: 3px;
+
+        a {
+            display: block;
+            padding: 0.625rem;
+            color: $darkBlue;
+            text-align: center;
+
+        }
+
     }
 
     &__links{

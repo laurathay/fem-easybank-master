@@ -142,6 +142,10 @@ button, .bouton2merde {
   transform: rotate(-45deg);
 }
 .header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   margin: 0 1.5rem;
   padding: 1.25rem;

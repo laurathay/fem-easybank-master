@@ -83,6 +83,10 @@
     }
 
     &__menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%; // on décale a 50% de la gauche
+        transform: translateX(-50%); // avec ca en complément ca aligne l'OBJET et re équilibre le tout pour bien centrer 
         background: $white;
         margin: 0 1.5rem;
         padding : 1.25rem;

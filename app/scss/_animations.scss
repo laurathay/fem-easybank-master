@@ -1,3 +1,7 @@
+.has-faded {
+    visibility: hidden;
+}
+
 @keyframes fade-in {
 
     from{ //display doesnt work in animation so use visibility

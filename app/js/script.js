@@ -5,10 +5,10 @@ const overlay = document.querySelector('.overlay');
 
 //pour que le burger devienne une croix 
 
-btnHamburger.addEventListener('click', function(){ //close hamburger menu
+btnHamburger.addEventListener('click', function(){ 
     console.log('click hamburger');
 
-    if(header.classList.contains('open')){
+    if(header.classList.contains('open')){ //close hamburger menu
         header.classList.remove('open');
         header.classList.remove('fade-in');
         overlay.classList.add('fade-out');

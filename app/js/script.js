@@ -2,6 +2,7 @@
 const btnHamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
+const fadedElms = document.querySelectorAll('.has-faded');
 
 //pour que le burger devienne une croix 
 
@@ -15,8 +16,11 @@ btnHamburger.addEventListener('click', function(){
     }
     else{ // open hamburger menu
         header.classList.add('open');
-        overlay.classList.remove('fade-out');
-        overlay.classList.add('fade-in');
+        fadedElems.forEach(function(element){
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        });
+    
     }
 
 });

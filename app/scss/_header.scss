@@ -35,6 +35,8 @@
     }
 
      nav{    
+        position: relative; //pour mettre la bar au dessus quand on appuie sur le burger
+        background-color: $white; // pour qu'elle sois bien visible
        // padding: 17px donc 17/16 = 1.0625rem;
         padding-top: 1.0625rem; 
         padding-bottom: 1.0625rem;
@@ -152,7 +154,7 @@
     }
     .overlay  {
         position: fixed;
-        top: 3.75rem; //60px;
+        top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;

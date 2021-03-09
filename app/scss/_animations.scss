@@ -22,7 +22,7 @@
 }
 
 .fade-in {
-    animation: fade-in 300ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+    animation: fade-in 200ms ease-in-out forwards; //forwards will keep the style after the animation is finished
 }
 
 @keyframes fade-out {
@@ -46,5 +46,5 @@
 }
 
 .fade-out {
-    animation: fade-out 300ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+    animation: fade-out 200ms ease-in-out forwards; //forwards will keep the style after the animation is finished
 }

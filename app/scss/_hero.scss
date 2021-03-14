@@ -1,10 +1,24 @@
 .hero {
 
     &__image {
-        background-image: url('/images/'bg-intro-mobile.svg);
+        border: 1px solid magenta;
+        position: relative;
+        background-image: url('../../images/bg-intro-mobile.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        min-height: 17.5rem;
+
+        &:before {
+            content: ""; //à ne pas oublier pour donner une donnée
+            width: 100%; //qui fera apparaitre l'image 
+            height: 100%;
+            position: absolute;
+            background-image: url('../../images/image-mockups.png');
+            background-size: 93%;
+            background-repeat: no-repeat;
+            background-position : center bottom;
+        }
 
     }
 

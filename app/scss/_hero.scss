@@ -1,4 +1,7 @@
 .hero {
+    @include breakpoint-up(large){
+        display: flex;
+    }
 
     &__image {
         border: 1px solid magenta;
@@ -8,6 +11,11 @@
         background-repeat: no-repeat;
         background-position: center center;
         min-height: 17.5rem;
+
+        @include breakpoint-up(large){
+            flex: 1;
+            order: 2; //pour définir l'ordre des images
+        }
 
         &:before {
             content: ""; //à ne pas oublier pour donner une donnée
@@ -24,6 +32,11 @@
 
     &__text {
         text-align: center;
+
+        @include breakpoint-up(large){
+            flex: 1;
+            order: 1;
+        }
 
         h1 {
             font-weight: 300;

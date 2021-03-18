@@ -69,7 +69,9 @@ a, a:visited, a:hover {
 }
 
 .container {
+  padding-top: 2.25rem;
   padding-left: 1.5rem;
+  padding-bottom: 2.25rem;
   padding-right: 1.5rem;
 }
 
@@ -87,6 +89,7 @@ a, a:visited, a:hover {
 }
 
 button, .bouton2merde {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 50px;
@@ -94,6 +97,7 @@ button, .bouton2merde {
   cursor: pointer;
   color: white;
   font-weight: 400;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 40em) {
@@ -199,14 +203,6 @@ button, .bouton2merde {
   opacity: 1;
   background: linear-gradient(to right, #31d35c, #2bb7da);
 }
-.header__links__cta {
-  font-size: 0.875rem;
-  color: white;
-  transition: opacity 300ms ease-in-out;
-}
-.header__links__cta:hover {
-  opacity: 0.75;
-}
 .header .overlay {
   position: fixed;
   top: 0px;
@@ -216,6 +212,11 @@ button, .bouton2merde {
   background-image: linear-gradient(#2d314d, transparent);
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+  }
+}
 .hero__image {
   border: 1px solid magenta;
   position: relative;
@@ -224,6 +225,12 @@ button, .bouton2merde {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 17.5rem;
+}
+@media (min-width: 64em) {
+  .hero__image {
+    flex: 1;
+    order: 2;
+  }
 }
 .hero__image:before {
   content: "";
@@ -238,15 +245,22 @@ button, .bouton2merde {
 .hero__text {
   text-align: center;
 }
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 1;
+    order: 1;
+  }
+}
 .hero__text h1 {
   font-weight: 300;
   font-size: 2.31rem;
   line-height: 1.15;
   color: #2d314d;
+  margin-bottom: 1.5rem;
 }
 .hero__text p {
   line-height: 1.5;
-  margin-bottom: 2.26rem;
+  margin-bottom: 2.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

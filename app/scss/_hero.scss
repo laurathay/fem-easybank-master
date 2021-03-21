@@ -1,6 +1,7 @@
 .hero {
     @include breakpoint-up(large){
         display: flex;
+        align-items: center; //centrer le texte
     }
 
     &__image {
@@ -15,6 +16,7 @@
         @include breakpoint-up(large){
             flex: 1;
             order: 2; //pour définir l'ordre des images
+            min-height: 41rem; //donne la grandeur de l'image
         }
 
         &:before {

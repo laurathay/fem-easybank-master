@@ -127,6 +127,8 @@ button, .bouton2merde {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+.header .overlay.fade-in {
   background-image: linear-gradient(#2d314d, transparent);
 }
 .header nav {
@@ -209,7 +211,6 @@ button, .bouton2merde {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: linear-gradient(#2d314d, transparent);
 }
 
 @media (min-width: 64em) {
@@ -232,6 +233,8 @@ button, .bouton2merde {
     flex: 1;
     order: 2;
     min-height: 41rem;
+    background-image: url("../../images/bg-intro-desktop.svg");
+    background-position: left center;
   }
 }
 .hero__image:before {

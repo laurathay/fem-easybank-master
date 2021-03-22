@@ -17,6 +17,8 @@
             flex: 1;
             order: 2; //pour définir l'ordre des images
             min-height: 41rem; //donne la grandeur de l'image
+            background-image: url('../../images/bg-intro-desktop.svg');
+            background-position: left center;
         }
 
         &:before {

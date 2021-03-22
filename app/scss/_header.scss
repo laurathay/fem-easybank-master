@@ -27,9 +27,11 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-image: linear-gradient($darkBlue, transparent);
+        // background-image: linear-gradient($darkBlue, transparent);
     
         &.fade-in {
+            background-image: linear-gradient($darkBlue, transparent);
+
 
         }
     }
@@ -148,7 +150,7 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-image: linear-gradient($darkBlue, transparent);
+        // background-image: linear-gradient($darkBlue, transparent);
     }
 }
 

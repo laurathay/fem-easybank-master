@@ -1,8 +1,13 @@
 .hero {
-    @include breakpoint-up(large){
-        display: flex;
-        align-items: center; //centrer le texte
+    background-color: $veryLightGray;
+
+    .container{
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center; //centrer le texte
+        }       
     }
+
 
     &__image {
         position: relative;
@@ -12,16 +17,43 @@
         background-position: center center;
         min-height: 17.5rem;
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(large){ //pour le responsive
             flex: 3;
             order: 2; //pour définir l'ordre des images
             min-height: 41rem; //donne la grandeur de l'image
-            background-image: url('../../images/bg-intro-desktop.svg');
-            background-position: left center;
+            background-image: none;
+            // background-image: url('../../images/bg-intro-desktop.svg');
+            // background-position: left center;
         }
 
-        &:before {
+        &::before, &::after {
+            border: 1px solid magenta;
+        }
+
+        &::before {
+            border: 1px solid magenta;
+
             content: ""; //à ne pas oublier pour donner une donnée
+            position: absolute;
+            width: 100%; //qui fera apparaitre l'image 
+            height: 100%;
+            position: absolute;
+            background-image: url('../../images/intro-desktop.svg');
+            background-size: 93%;
+            background-repeat: no-repeat;
+            background-position : center bottom;
+
+            @include breakpoint-up(large){
+                width: 150%;
+                background-size: 122%;
+                background-repeat: no-repeat;
+                background-position: 0% 83%;
+            }
+        }
+
+        &::after {
+            content: ""; //à ne pas oublier pour donner une donnée
+            position: absolute;
             width: 100%; //qui fera apparaitre l'image 
             height: 100%;
             position: absolute;
@@ -36,9 +68,10 @@
     &__text {
         text-align: center;
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(large){ //pour le responsive
             flex: 2;
             order: 1;
+            text-align: left;
         }
 
         h1 {
@@ -47,6 +80,10 @@
             line-height: 1.15;
             color: $darkBlue;
             margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large){
+                font-size: $font-xlg
+            }
         }
 
         p {

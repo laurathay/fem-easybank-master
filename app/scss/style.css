@@ -56,6 +56,11 @@ body {
   line-height: 1.3;
   font-weight: 300;
 }
+@media (min-width: 64em) {
+  body {
+    font-size: 1.25rem;
+  }
+}
 body.noscroll {
   overflow: hidden;
 }
@@ -69,10 +74,34 @@ a, a:visited, a:hover {
 }
 
 .container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+.container--pall {
   padding-top: 2.25rem;
-  padding-left: 1.5rem;
   padding-bottom: 2.25rem;
   padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.container--px {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.container--pt {
+  padding-top: 2.25rem;
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 2.25rem;
+}
+.container--pl {
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -213,8 +242,11 @@ button, .bouton2merde {
   left: 0px;
 }
 
+.hero {
+  background-color: #fafafa;
+}
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: flex;
     align-items: center;
   }
@@ -232,12 +264,35 @@ button, .bouton2merde {
     flex: 3;
     order: 2;
     min-height: 41rem;
-    background-image: url("../../images/bg-intro-desktop.svg");
-    background-position: left center;
+    background-image: none;
   }
 }
-.hero__image:before {
+.hero__image::before, .hero__image::after {
+  border: 1px solid magenta;
+}
+.hero__image::before {
+  border: 1px solid magenta;
   content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../images/intro-desktop.svg");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+@media (min-width: 64em) {
+  .hero__image::before {
+    width: 150%;
+    background-size: 122%;
+    background-repeat: no-repeat;
+    background-position: 0% 83%;
+  }
+}
+.hero__image::after {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -253,6 +308,7 @@ button, .bouton2merde {
   .hero__text {
     flex: 2;
     order: 1;
+    text-align: left;
   }
 }
 .hero__text h1 {
@@ -261,6 +317,11 @@ button, .bouton2merde {
   line-height: 1.15;
   color: #2d314d;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
 }
 .hero__text p {
   line-height: 1.5;

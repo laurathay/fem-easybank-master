@@ -5,7 +5,6 @@
     }
 
     &__image {
-        border: 1px solid magenta;
         position: relative;
         background-image: url('../../images/bg-intro-mobile.svg');
         background-size: cover;
@@ -14,7 +13,7 @@
         min-height: 17.5rem;
 
         @include breakpoint-up(large){
-            flex: 1;
+            flex: 3;
             order: 2; //pour définir l'ordre des images
             min-height: 41rem; //donne la grandeur de l'image
             background-image: url('../../images/bg-intro-desktop.svg');
@@ -38,7 +37,7 @@
         text-align: center;
 
         @include breakpoint-up(large){
-            flex: 1;
+            flex: 2;
             order: 1;
         }
 

@@ -267,9 +267,6 @@ button, .bouton2merde {
     background-image: none;
   }
 }
-.hero__image::before, .hero__image::after {
-  border: 1px solid magenta;
-}
 .hero__image::before {
   border: 1px solid magenta;
   content: "";
@@ -300,6 +297,16 @@ button, .bouton2merde {
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-repeat: no-repeat;
+    background-position: center 150%;
+    left: 22%;
+  }
 }
 .hero__text {
   text-align: center;

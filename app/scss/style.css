@@ -259,6 +259,12 @@ button, .bouton2merde {
   background-position: center center;
   min-height: 17.5rem;
 }
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 60%;
+  }
+}
 @media (min-width: 64em) {
   .hero__image {
     flex: 3;
@@ -267,17 +273,19 @@ button, .bouton2merde {
     background-image: none;
   }
 }
-.hero__image::before {
-  border: 1px solid magenta;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url("../../images/intro-desktop.svg");
-  background-size: 93%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+@media (min-width: 64em) {
+  .hero__image::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../../images/intro-desktop.svg");
+    background-size: 122%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position: 0% 83%;
+  }
 }
 @media (min-width: 64em) {
   .hero__image::before {
@@ -297,6 +305,11 @@ button, .bouton2merde {
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
 }
 @media (min-width: 64em) {
   .hero__image::after {

@@ -17,6 +17,11 @@
         background-position: center center;
         min-height: 17.5rem;
 
+        @include breakpoint-up(medium){
+            min-height: 25rem;
+            background-position: center 60%;
+        }
+
         @include breakpoint-up(large){ //pour le responsive
             flex: 3;
             order: 2; //pour définir l'ordre des images
@@ -31,17 +36,21 @@
         }
 
         &::before {
-            border: 1px solid magenta;
+            // border: 1px solid magenta;
 
-            content: ""; //à ne pas oublier pour donner une donnée
-            position: absolute;
-            width: 100%; //qui fera apparaitre l'image 
-            height: 100%;
-            position: absolute;
-            background-image: url('../../images/intro-desktop.svg');
-            background-size: 93%;
-            background-repeat: no-repeat;
-            background-position : center bottom;
+          
+            @include breakpoint-up(large){
+                content: ""; //à ne pas oublier pour donner une donnée
+                position: absolute;
+                width: 150%; //qui fera apparaitre l'image 
+                height: 100%;
+                position: absolute;
+                background-image: url('../../images/intro-desktop.svg');
+                background-size: 122%;
+                background-repeat: no-repeat;
+                background-position : center bottom;
+                background-position : 0% 83%;
+            }
 
             @include breakpoint-up(large){
                 width: 150%;
@@ -61,6 +70,10 @@
             background-size: 93%;
             background-repeat: no-repeat;
             background-position : center bottom;
+
+            @include breakpoint-up(medium){
+                background-size: 52%;
+            }
 
             @include breakpoint-up(large){
                 width: 120%;

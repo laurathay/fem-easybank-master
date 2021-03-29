@@ -2,16 +2,23 @@
 
     &__grid {
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(medium){
             display: flex;
+            flex-wrap: wrap;
         }
 
     }
     
     &__item {
+        border: 1px solid magenta;
+        padding: 0.9375rem;
+
+        @include breakpoint-up(medium){
+            flex: 1 0 50%; // pour la tablette pour qu'elle prenne la moitié et non pas juste aligné tout en horizontal
+        }
 
         @include breakpoint-up(large){
-            flex: 1;
+            flex: 1; // pour qu'elles prennent toutes la meme place 
         }
 
     }

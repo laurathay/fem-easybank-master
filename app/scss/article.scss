@@ -1,0 +1,27 @@
+.articles {
+    background-color: $veryLightGray;
+}
+
+.article {
+    &__content{
+
+    }
+
+    &__grid {
+        display: grid;
+        
+    }
+
+    &__item {
+
+    }
+
+    &__image {
+
+    }
+
+    &__text {
+
+    }
+}
+

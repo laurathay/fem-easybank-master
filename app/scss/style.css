@@ -510,6 +510,14 @@ button, .bouton2merde {
   padding: 2.5rem;
   text-align: center;
 }
+@media (min-width: 64em) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-area: "logo links1 links2 cta" "social links1 links2 cta";
+  }
+}
 .footer a {
   color: white;
 }
@@ -517,8 +525,18 @@ button, .bouton2merde {
   display: inline-block;
   margin-bottom: 1.875rem;
 }
+@media (min-width: 64em) {
+  .footer__logo {
+    grid-area: logo;
+  }
+}
 .footer__social {
   margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .footer__social {
+    grid-area: logo;
+  }
 }
 .footer__social a {
   display: inline-block;
@@ -531,11 +549,26 @@ button, .bouton2merde {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 64em) {
+  .footer__links.col1 {
+    grid-area: links1;
+  }
+}
 .footer__links.col2 {
   margin-bottom: 1.875rem;
 }
+@media (min-width: 64em) {
+  .footer__links.col2 {
+    grid-area: links2;
+  }
+}
 .footer__links a {
   flex: 0 0 auto;
+}
+@media (min-width: 64em) {
+  .footer__links__cta {
+    grid-area: cta;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

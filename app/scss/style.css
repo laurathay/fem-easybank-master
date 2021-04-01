@@ -515,7 +515,7 @@ button, .bouton2merde {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-area: "logo links1 links2 cta" "social links1 links2 cta";
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 cta";
   }
 }
 .footer a {
@@ -535,7 +535,7 @@ button, .bouton2merde {
 }
 @media (min-width: 64em) {
   .footer__social {
-    grid-area: logo;
+    grid-area: social;
   }
 }
 .footer__social a {
@@ -569,6 +569,9 @@ button, .bouton2merde {
   .footer__links__cta {
     grid-area: cta;
   }
+}
+.footer__links__cta a.button {
+  margin-bottom: 1.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */

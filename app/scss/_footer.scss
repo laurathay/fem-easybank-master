@@ -8,7 +8,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr) 2fr; //3 premiere colonne en 1fraction puis une grosse colonne de 2fractions
         grid-template-rows: repeat(2,1fr);
-        grid-template-area: 
+        grid-template-areas: 
             "logo links1 links2 cta"
             "social links1 links2 cta";
     }
@@ -30,7 +30,7 @@
         margin-bottom: 1.875rem;
 
         @include breakpoint-up(large){
-            grid-area: logo;
+            grid-area: social;
         }
 
         a {
@@ -72,10 +72,14 @@
         @include breakpoint-up(large){
             grid-area: cta;
         }
-        
+
         a.button{
+            margin-bottom: 1.875rem;
 
         }
+    }
+
+    &__copyright {
 
     }
     }

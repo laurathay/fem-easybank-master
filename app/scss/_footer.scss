@@ -51,11 +51,20 @@
         a {
             display: inline-block;
             height: 1.25rem;
+
+            svg path {
+                transition: fill 150ms ease-in-out;
+            }
+
+            & :hover svg path{ 
+                fill: $limeGreen;
+            }
         }
 
         a:not(:last-child) {
             margin-right: 1rem;
         }
+
     }
 
     &__links {
@@ -91,14 +100,19 @@
 
         a {
             line-height: 2.25;
+            transition: fill 150ms ease-in-out;
+            
+            &:hover{
+                color: $limeGreen;
+            }
         }
 
     &__cta {
 
         @include breakpoint-up(large){
             grid-area: cta;
-            justify-items: right;
-            text-align: end; //c'est grace a ca qu'il est correctement aligné
+            justify-self: end;
+            text-align: right; //c'est grace a ca qu'il est correctement aligné a droite
         }
 
         a.button{

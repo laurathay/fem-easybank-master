@@ -1,5 +1,8 @@
 .header{
 
+    position: relative;
+    z-index: 1;
+
     // hamburger open styles 
     &.open{
       
@@ -22,12 +25,13 @@
 
 
     .overlay  {
+        opacity: 0;
         position: fixed;
         top: 3.75rem; //60px;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        // background-image: linear-gradient($darkBlue, transparent);
+        background-image: linear-gradient($darkBlue, transparent);
     
         &.fade-in {
             background-image: linear-gradient($darkBlue, transparent);
@@ -145,12 +149,13 @@
 
     }
     .overlay  {
+        opacity: 0;
         position: fixed;
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        // background-image: linear-gradient($darkBlue, transparent);
+        background-image: linear-gradient($darkBlue, transparent);
     }
 }
 
